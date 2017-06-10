@@ -7,5 +7,6 @@ require '../vendor/autoload.php';
 $app = new \Slim\App;
 
 require_once('../app/api/post.php');
+require_once('../app/api/category.php');
 
 $app->run();

@@ -4,6 +4,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 $app = new \Slim\App;
 
+// Get All Posts
 $app->get('/api/posts', function(Request $request, Response $response){
     echo 'posts';
 });
