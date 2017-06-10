@@ -43,5 +43,30 @@ $app->get('/api/post/{id}', function(Request $request, Response $response){
     } catch(PDOEception $e){
         echo '{"error": {"text": '.$e->getMessage().'}}';
     }
+});
+
+// Add New Post
+$app->post('/api/post/add', function(Request $request, Response $response){
+    $title = $request->getParam('title');
+    $category_id = $request->getParam('category_id');
+    $body = $request->getParam('body');
+    $sql= "INSERT INTO posts (title, category_id, body) VALUES (:title, :category_id, :body)";
+    try{
+        // Get Database Object
+        $db = new db();
+        // Connect
+        $db = $db->connect();
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindParam(':title', $title);
+        $stmt->bindParam(':category_id', $category_id);
+        $stmt->bindParam(':body', $body);
+        $stmt->execute();
+
+        echo '{"notice": {"text": "Post Added"}}';
+
+    } catch(PDOEception $e){
+        echo '{"error": {"text": '.$e->getMessage().'}}';
+    }
 
 });
