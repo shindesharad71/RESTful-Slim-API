@@ -1,4 +1,4 @@
-# Slim RESTful API
+# :traffic_light: Slim RESTful API
 
 RESTful API Made Using Slim 3 PHP Framework.
 
@@ -24,3 +24,6 @@ Import **slim_api.sql** into database.
 
 **Database Tables**
 
+![Posts Table](https://github.com/shindesharad71/Slim-API/blob/master/screen/post.png?raw=true "Posts Table")
+
+![Categories Table](https://github.com/shindesharad71/Slim-API/blob/master/screen/category.png?raw=true "Categories Table")
