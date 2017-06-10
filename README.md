@@ -27,3 +27,6 @@ Import **slim_api.sql** into database.
 ![Posts Table](https://github.com/shindesharad71/Slim-API/blob/master/screen/post.png?raw=true "Posts Table")
 
 ![Categories Table](https://github.com/shindesharad71/Slim-API/blob/master/screen/category.png?raw=true "Categories Table")
+
+## :gem: License
+MIT License = Free Software!
