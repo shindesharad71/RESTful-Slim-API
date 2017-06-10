@@ -2,7 +2,7 @@
 
 RESTful API Made Using Slim 3 PHP Framework.
 
-## :o: API Methods
+## :gem: API Methods
 
 ### :radio_button: For Blog Posts
 * ```/api/posts``` **GET** - Get All Blog Posts.
@@ -18,4 +18,9 @@ RESTful API Made Using Slim 3 PHP Framework.
 * ```/api/category/update/{id}``` **PUT** - Update Category.
 * ```/api/category/delete/{id}``` **DELETE** - Delete Category.
 
-## :o: Database Structure
+## :gem: Database Structure
+
+Import **slim_api.sql** into database.
+
+**Database Tables**
+
