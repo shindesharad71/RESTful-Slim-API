@@ -20,7 +20,7 @@ RESTful API Made Using Slim 3 PHP Framework.
 
 ## :gem: Database Structure
 
-Import **slim_api.sql** into database.
+Import ```**slim_api.sql**``` into database.
 
 **Database Tables**
 
